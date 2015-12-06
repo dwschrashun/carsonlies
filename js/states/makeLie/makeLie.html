@@ -1,0 +1,24 @@
+<div class="navbar-nav" id="fillin">
+    <div class="navbar-form navbar-left">
+        <label>Type Your Text</label>
+        <input type="text" ng-model="quote" ng-change="drawCanvasText(quote)"></input>
+    </div>
+    <div class="navbar-left navlink">
+        <a ng-click="prepare()">Export to Image</a>
+    </div>
+     <div class="navbar-left navlink" ng-show="downloadReady">
+        <a href="{{dataURL}}">Download</a>
+    </div>
+
+    <div class="navbar-left navlink">
+        <a>Share</a>
+    </div>
+</div>
+<canvas id="the-canvas" height="600" width="800">
+</canvas>
+<img id="carson-image" src="{{imgSrc}}" />
+<!-- <div id="text-box">
+	<div id="user-text" ng-class="{'text-one': carsonNum === '1', 'text-two': carsonNum === '2', 'text-three': carsonNum === '3', 'text-four': carsonNum === '4'}" class="lie-text">
+		{{quote}}
+	</div>
+</div> -->

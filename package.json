@@ -1,0 +1,33 @@
+{
+  "name": "carsonlies",
+  "version": "1.0.0",
+  "description": "ben carson meme generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch server -e js,html server/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwschrashun/carsonlies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwschrashun/carsonlies/issues"
+  },
+  "homepage": "https://github.com/dwschrashun/carsonlies#readme",
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
+    "babel-core": "^6.2.1",
+    "body-parser": "^1.14.1",
+    "chalk": "^1.1.1",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "nodemon": "^1.8.1"
+  }
+}

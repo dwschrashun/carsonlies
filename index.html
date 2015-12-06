@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/" />
     <title>Ben Carson Lies Generator</title>
-    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <script src="/control.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/canvas-toBlob/canvas-toBlob.js"></script>    
+    <script src="/FileSaver/FileSaver.min.js"></script>
+    <script src="/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body ng-app="CarsonLies">
     <div id="main">
-        <div id="nav">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">CARSON</a>
-                </div>
-                <div>
-                    <a>Choose Your Carson</a>
-                </div>
-                <div>
-                    <label>Type Your Text</label>
-                </div>
-                <div>
-                    <a>Download</a>
-                </div>
-                <div>
-                    <a>Share</a>
-                </div>
-            </div>
-        </div>
+        <navbar></navbar>
         <div class="container" id="content">
-            <div id="carson"></div>
+            <div id="carson" ui-view></div>
         </div>
     </div>
 </body>
