@@ -29,5 +29,8 @@
     "gulp-plumber": "^1.0.1",
     "gulp-sourcemaps": "^1.6.0",
     "nodemon": "^1.8.1"
-  }
+  },
+  "engines": {
+    "node": "0.12.4"
+  },
 }
