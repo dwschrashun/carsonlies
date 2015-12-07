@@ -1,3 +1,25 @@
+@media (max-width: 768px) {
+	#fillin {
+		margin:0px;
+	}
+	#type-text {
+		margin: 0px 0px 0px 15px;
+		padding-left: 0px;
+	}
+	.navlink {
+		display: inline-block;
+	}
+	.navbar-header {
+		display: inline-block;
+	}
+	.navbar-brand {
+		float: none;
+	}
+}
+
+#choose {
+	padding-top: 4px;
+}
 body {
 	background-color: #344252;
 }
