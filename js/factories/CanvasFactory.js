@@ -1,11 +1,10 @@
 app.factory("CanvasFactory", function () {
-	function drawImg (canvas) {
+	function drawImg (canvas, size) {
 		var ctx = canvas.getContext("2d");
 		var immij = document.getElementById('carson-image');
 		ctx.drawImage(immij, 0, 0);
 		immij.onload = function () {
-			console.log("image loaded", immij, ctx);
-			ctx.drawImage(immij, 0, 0);
+				ctx.drawImage(immij, 0, 0, size.width, size.height);
 		};
 		immij.onerror = function () {
 			console.log("image error");
