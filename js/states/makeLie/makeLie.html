@@ -1,7 +1,7 @@
 <div class="navbar-nav" id="fillin">
     <div class="navbar-form navbar-left" id="type-text">
         <label>Type Your Text</label>
-        <input type="text" ng-model="quote" ng-change="drawCanvasText(quote)"></input>
+        <input type="text" ng-model="quote" ng-change="drawCanvasText(quote, canvasSize)"></input>
     </div>
     <div class="navbar-left navlink">
         <a ng-click="prepare()">Export to Image (uh, Download)</a>

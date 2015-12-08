@@ -22,9 +22,9 @@ app.config(function ($stateProvider) {
         	function drawCanvasImage (cvs, canvasSize) {
         		CanvasFactory.drawImg(cvs, canvasSize);
         	}
-        	$scope.drawCanvasText = function (txt) {
-        		$scope.downloadReady = false;
-        		CanvasFactory.drawText(canvas, txt, $scope.carsonNum);
+        	$scope.drawCanvasText = function (txt, size) {
+                console.log("canvassize", size);
+        		CanvasFactory.drawText(canvas, txt, $scope.carsonNum, size);
         	};
         	drawCanvasImage(canvas, $scope.canvasSize);
             $scope.prepare = function () {
