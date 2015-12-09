@@ -20,6 +20,7 @@
 #advert {
 	display: block;
 	position: relative;
+	top: 800px;
 }
 
 #choose {
