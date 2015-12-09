@@ -7,7 +7,7 @@ app.config(function ($stateProvider) {
                 return Math.floor(Math.random() * 10000) % 7 + 1; 
             }
         },
-        controller: function ($scope, $state, DownloadFactory, CanvasFactory, randomCarson) {
+        controller: function ($scope, $state, CanvasFactory, randomCarson) {
         	$scope.reload = function () {
                 $state.go("makeLie", {}, {reload:true});
             }
