@@ -1,6 +1,6 @@
 app.config(function ($stateProvider) {
     $stateProvider.state("menu", {
-        url: '/',
+        url: '/menu',
         templateUrl: 'states/menu/menu.html',
         controller: function ($scope, $state) {
             $scope.loadCarson = function (event) {
