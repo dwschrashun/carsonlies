@@ -8,7 +8,10 @@ app.config(function ($stateProvider) {
             }
         },
         controller: function ($scope, $state, DownloadFactory, CanvasFactory, randomCarson) {
-        	var vpWidth = document.documentElement.clientWidth;
+        	$scope.reload = function () {
+                $state.go("makeLie", {}, {reload:true});
+            }
+            var vpWidth = document.documentElement.clientWidth;
             var canvas = document.querySelector('#the-canvas');
             $scope.canvasSize = {width: 1067, height: 600};
             if (vpWidth < 768) {

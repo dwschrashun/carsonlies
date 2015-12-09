@@ -1,10 +1,13 @@
 <div class="navbar-nav" id="fillin">
     <div class="navbar-form navbar-left" id="type-text">
-        <label>Type Your Text</label>
-        <input type="text" ng-model="quote" ng-change="drawCanvasText(quote, canvasSize)"></input>
+        <div id="label">TYPE YOUR LIE</div>
+        <input type="text" class="form-control" ng-model="quote" ng-change="drawCanvasText(quote, canvasSize)"></input>
     </div>
-    <div class="navbar-left navlink">
-        <a ng-click="prepare()">Export to Image (uh, Download)</a>
+    <div class="navbar-left">
+        <button class="btn btn-default navbar-btn" ng-click="prepare()">EXPORT TO IMAGE (UH, DOWNLOAD)</a>
+    </div>
+    <div class="navbar-left">
+        <button class="btn btn-default navbar-btn" ng-click="reload()">GET NEW CARSON</a>
     </div>
 </div>
 <canvas id="the-canvas" height="{{canvasSize.height}}" width="{{canvasSize.width}}">
