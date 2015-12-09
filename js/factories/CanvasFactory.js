@@ -14,7 +14,7 @@ app.factory("CanvasFactory", function () {
 		drawImg(canvas, size);
 		var ctx = canvas.getContext("2d");
 		var coords = getCoords(size);
-		var fontStr = '3vw Helvetica';
+		var fontStr = 'bold 3vw Helvetica';
 		ctx.font = fontStr;
 		ctx.fillText(text, coords.x, coords.y, coords.max);
 	}

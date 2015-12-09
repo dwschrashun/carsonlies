@@ -17,6 +17,11 @@
 	}
 }
 
+#advert {
+	display: block;
+	position: relative;
+}
+
 #choose {
 	padding-top: 4px;
 }
