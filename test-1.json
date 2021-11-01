@@ -1,0 +1,17 @@
+{
+  "primary": "one",
+  "but": {
+    "another": {
+      "nesting": {
+        "again": "me"
+      }
+    }
+  },
+  "anything": {
+    "more": 1,
+    "some": [
+      2,
+      "oooooo"
+    ]
+  }
+}
